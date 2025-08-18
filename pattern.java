@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+
+public class NumberPattern {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number (a): ");
+        int a = input.nextInt();
+
+        System.out.print("Enter second number (b): ");
+        int b = input.nextInt();
+
+        System.out.print("Enter third number (c): ");
+        int c = input.nextInt();
+
+        if(a < b && b < c) {
+            System.out.println("Strictly Increasing");
+        } 
+        else if(a > b && b > c) {
+            System.out.println("Strictly Decreasing");
+        } 
+        else if(b > a && b > c) {
+            System.out.println("Middle number is largest");
+        } 
+        else {
+            System.out.println("No specific pattern");
+        }
+    }
+}
