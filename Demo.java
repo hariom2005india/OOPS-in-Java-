@@ -11,7 +11,7 @@ class Thsdemo{
       
   }
 }
- class Thsdemp{
+ class Thsdemo{
   public static void main (String[]args){
     Thsdemo ob1 =new Thsdemo();
     ob1.get(10,20);
